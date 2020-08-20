@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Luiz Macedo</title>
+    <link>http://www.luizmacedo.dev/posts/</link>
+    <description>Recent content in Posts on Luiz Macedo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2020, Luiz Macedo; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 18 Aug 2020 00:16:40 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.luizmacedo.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://www.luizmacedo.dev/posts/hello-world/</link>
+      <pubDate>Tue, 18 Aug 2020 00:16:40 -0500</pubDate>
+      
+      <guid>http://www.luizmacedo.dev/posts/hello-world/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
