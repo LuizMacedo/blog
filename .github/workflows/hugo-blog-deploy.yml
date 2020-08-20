@@ -34,6 +34,6 @@ jobs:
       with:
         personal_token: ${{ secrets.GH_ACTION_DEPLOY_PAT }}
         #deploy_key: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
-        external_repository: LuizMacedo/luizmacedo.github.io.git
+        external_repository: LuizMacedo/luizmacedo.github.io
         publish_branch: master
         publish_dir: ./public
