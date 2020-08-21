@@ -1,7 +1,7 @@
 <footer class = 'footer'>
   <div class = 'footer_inner wrap pale'>
     <img src = '{{ absURL "icons/apple-touch-icon.png" }}' class = 'icon icon_2 transparent'>
-    <p>Copyright &copy;&nbsp;<span class = 'year'></span>&nbsp;{{ .Site.Title | upper }}. All Rights Reserved</p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Copyright &copy;&nbsp;<span class = 'year'></span>&nbsp;<a rel="cc:attributionURL" property="dct:title" href="https://luizmacedo.dev/">{{ .Site.Title | upper }}</a> is licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0<img style="height:22px!important;margin-left:5px;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:5px;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /></a></p>
     {{- partial "top" .}}
   </div>
 </footer>
