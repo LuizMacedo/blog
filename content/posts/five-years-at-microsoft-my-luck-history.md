@@ -1,7 +1,7 @@
 ---
 title: "5 years at Microsoft, my lucky story!"
 date: 2019-09-04T10:00:20-05:00
-tags: ["Microsoft", "DevOps", "Career", "Luck"]
+tags: ["Microsoft", "DevOps", "Career"]
 draft: false
 # description: "Article description." # Description used for search engine.
 # featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -18,6 +18,7 @@ draft: false
 ---
 
 ![Congratulations, Luiz on your anniversary!](/images/five-year-anniversary.png)
+
 ```
 I'll translate it to english as soon as possible!
 ```
