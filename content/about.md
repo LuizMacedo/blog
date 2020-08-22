@@ -6,7 +6,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Luiz Macedo"
 +++
 
-I'm a DevOps Support Escalation Engineer at [Luiz Macedo](https://www.microsoft.com/).
+I'm a DevOps Support Escalation Engineer at [Microsoft](https://www.microsoft.com/).
 
 I code, write, speak, empower, promote, learn and listen.
 
