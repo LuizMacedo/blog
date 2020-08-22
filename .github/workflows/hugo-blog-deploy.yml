@@ -33,7 +33,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.GH_ACTION_DEPLOY_PAT }}
-        #deploy_key: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
         external_repository: LuizMacedo/luizmacedo.github.io
         publish_branch: master
         publish_dir: ./public
+        cname: luizmacedo.dev
