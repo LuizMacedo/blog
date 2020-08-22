@@ -3,8 +3,8 @@ title: "5 years at Microsoft, my lucky story!"
 date: 2019-09-04T10:00:20-05:00
 tags: ["Microsoft", "DevOps", "Career"]
 draft: false
-# description: "Article description." # Description used for search engine.
-# featured: true # Sets if post is a featured post, making appear on the home page side bar.
+description: "This post says much about the people who always helped my in my career until and after join in Microsoft. This is a career path based post, but it's to say Thank you for everyone." # Description used for search engine.
+featured: true # Sets if post is a featured post, making appear on the home page side bar.
 # toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
@@ -13,8 +13,9 @@ draft: false
 # codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 # codeLineNumbers: false # Override global value for showing of line numbers within code block.
 # figurePositionShow: true # Override global value for showing the figure label.
-# categories:
-#   - Technology
+categories:
+   - Technology
+   - Career
 ---
 
 ![Congratulations, Luiz on your anniversary!](/images/five-year-anniversary.png)

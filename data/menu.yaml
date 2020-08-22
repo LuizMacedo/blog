@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: about/
+# - name: Links
+#   submenu:
+#     - name: LinkedIn
+#       link: https://www.linkedin.com/
+#     - name: Twitter
+#       link: https://twitter.com/

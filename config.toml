@@ -2,10 +2,10 @@
 # if you set it to "/" share icons won't work properly on production
 baseURL = "https://luizmacedo.dev" # Include trailing slash
 languageCode = "en-us"
-title = "Luiz Macedo's Blog"
+title = "Luiz Macedo"
 author = "Luiz Macedo"
-copyright = "Copyright © 2020, Luiz Macedo; all rights reserved."
-# canonifyurls = true
+copyright = "Copyright © 2020 LUIZ MACEDO'S BLOG is licensed under CC BY 4.0"
+canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
 disqusShortname = "luiz-macedo-blog" # Comments
@@ -29,11 +29,6 @@ twitter = "@OLuizMacedo"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "DevOps Support Escalation Engineer at Microsoft. I code, write, speak, empower, promote, learn and listen. Opinions are my own."
 
-# github = "https://github.com/LuizMacedo" # https://github.com/LuizMacedo
-# linkedin = "https://www.linkedin.com/in/luizfmacedo" # https://www.linkedin.com/in/luizfmacedo/
-# email = "luizmacedo@outlook.com" # luizmacedo@outlook.com
-# instagram = "https://www.instagram.com/oluizmacedo" # https://www.instagram.com/oluizmacedo/
-
 # Google analytics Id
 ga_analytics = "UA-82328117-4"
 
@@ -56,7 +51,7 @@ mainSections = ["posts"] # see config details here https://gohugo.io/functions/w
 # center logo on navbar
 centerLogo = false # Set to "true" for centering or "false" for left aligned.
 
-#logo = "images/Logo.png"
+#logo = "logos/Logo.png"
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally

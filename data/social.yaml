@@ -1,0 +1,9 @@
+- item: "github"
+  url: "https://github.com/LuizMacedo"
+- item: "twitter"
+  url: "https://twitter.com/oluizmacedo"
+- item: "linkedin"
+  url: "https://www.linkedin.com/in/luizfmacedo/"
+- item: "rss"
+  url: "index.xml"
+  internal:  true
