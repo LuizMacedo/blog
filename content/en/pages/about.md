@@ -1,9 +1,11 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
+description = "I'm a DevOps Support Escalation Engineer at [Microsoft](https://www.microsoft.com/)."
 date = "2019-02-28"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Luiz Macedo"
+slug = "about"
+# translationKey = "about"
 +++
 
 I'm a DevOps Support Escalation Engineer at [Microsoft](https://www.microsoft.com/).

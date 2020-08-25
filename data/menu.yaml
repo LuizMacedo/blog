@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: About
-  link: about/
+  link: /pages/about/
 # - name: Links
 #   submenu:
 #     - name: LinkedIn

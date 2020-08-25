@@ -1,7 +1,7 @@
 ---
-title: "5 years at Microsoft, my lucky story!"
+title: "5 anos de Microsoft, minha história de sorte!"
 date: 2019-09-04T10:00:20-05:00
-tags: ["Microsoft", "DevOps", "Career"]
+tags: ["Microsoft", "DevOps", "Carreira"]
 draft: false
 description: "This post says much about the people who always helped my in my career until and after join in Microsoft. This is a career path based post, but it's to say Thank you for everyone." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -13,16 +13,15 @@ featured: true # Sets if post is a featured post, making appear on the home page
 # codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 # codeLineNumbers: false # Override global value for showing of line numbers within code block.
 # figurePositionShow: true # Override global value for showing the figure label.
+# translationKey: "five-years-at-microsoft-my-luck-history"
+slug: "5-anos-de-microsoft-minha-história-de-sorte"
+
 categories:
-   - Technology
-   - Career
+   - Tecnologia
+   - Carreira
 ---
 
-![Congratulations, Luiz on your anniversary!](/images/five-year-anniversary.png)
-
-```
-I'll translate it to english as soon as possible!
-```
+![Parabéns, Luiz no seu aniversário!](/images/five-year-anniversary.png)
 
 Nessa semana dia 01/setembro/2019 fez 5 anos que tenho a sorte de trabalhar na maior empresa de TI do mundo. A empresa dos meus sonhos, que consegui finalmente virar funcionário com 25 anos.
 
