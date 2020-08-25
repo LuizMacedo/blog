@@ -22,43 +22,43 @@ DefaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
-    contentDir = "content/en" #English
+    contentDir = "content/english" #English
     weight = 1
     languageName = "English" # Name shown in the main menu
     title = "Luiz Macedo"
-    [languages.en.params]
-      linkedin = "https://www.linkedin.com/in/luizfmacedo/"
-    [[languages.en.menu.main]]
-        name = "Home"
-        url = ""
-        weight = 1
-    [[languages.en.menu.main]]
-        name = "About"
-        url = "pages/about"
-        weight = 3
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
-  [languages.pt-BR]
-    contentDir = "content/pt-br" #Simplified Chinese
+    # [languages.en.params]
+    #   linkedin = "https://www.linkedin.com/in/luizfmacedo/"
+    # [[languages.en.menu.main]]
+    #     name = "Home"
+    #     url = ""
+    #     weight = 1
+    # [[languages.en.menu.main]]
+    #     name = "About"
+    #     url = "pages/about"
+    #     weight = 3
+    # [[languages.en.menu.main]]
+    #     name = "Tags"
+    #     url = "tags"
+    #     weight = 3
+  [languages.br]
+    contentDir = "content/portuguese" #Simplified Chinese
     weight = 2
     languageName = "Português" # Name shown in the main menu
     title = "Luiz Macedo"
-    [languages.pt-BR.params]
-      linkedin = "https://www.linkedin.com/in/luizfmacedo/"
-    [[languages.pt-BR.menu.main]]
-        name = "Home"
-        url = ""
-        weight = 1
-    [[languages.pt-BR.menu.main]]
-        name = "Sobre"
-        url = "about/"
-        weight = 3
-    [[languages.pt-BR.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
+    # [languages.pt-BR.params]
+    #   linkedin = "https://www.linkedin.com/in/luizfmacedo/"
+    # [[languages.pt-BR.menu.main]]
+    #     name = "Home"
+    #     url = ""
+    #     weight = 1
+    # [[languages.pt-BR.menu.main]]
+    #     name = "Sobre"
+    #     url = "about/"
+    #     weight = 3
+    # [[languages.pt-BR.menu.main]]
+    #     name = "Tags"
+    #     url = "tags"
+    #     weight = 3
 
 [markup]
   [markup.highlight]
