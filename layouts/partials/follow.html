@@ -11,28 +11,7 @@
     </svg>
   </a>
   {{- end }}
-  <!-- Language Switcher Start -->
-  {{ if .Site.IsMultiLingual }}
-  {{ if ge (len .Site.Languages) 2 }}
-  <!-- number of languages> -->
-
-  {{ range .Site.Languages }}
-  {{ if not (eq .Lang $.Site.Language.Lang) }}
-  <a href="/{{ .Lang }}" lang="{{ .Lang }}"> <img src={{ absURL "/icons/brazil-flag-18.png" }} class="icon"style="width:18px; height: 18px;" alt="icon" /> {{ default .Lang .LanguageName }} </a>
-  {{ end }}
-  {{ end }}
-
-  {{ else }}
-
-  {{ range .Site.Languages }}
-  {{ if not (eq .Lang $.Site.Language.Lang) }}
-  <a href="/{{ .Lang }}" lang="{{ .Lang }}"> {{ default .Lang .LanguageName }}</a>
-  {{ end }}
-  {{ end }}
-
-  {{ end }}
-  {{ end }}
-  <!-- Language Switcher End -->
-
+  
+  {{- partial "language-switcher" . }}
   {{- partial "mode" . }}
 </div>
