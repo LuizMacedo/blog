@@ -44,10 +44,10 @@ DefaultContentLanguageInSubdir = true
             name = "About"
             url = "/pages/about/"
             weight = 2
-        [[languages.en.menu.main]]
-            name = "Tags"
-            url = "/tags/"
-            weight = 3
+        # [[languages.en.menu.main]]
+        #     name = "Tags"
+        #     url = "/tags/"
+        #     weight = 3
   [languages.br]
     contentDir = "content/portuguese"
     languageName = "Português" # Name shown in the main menu
@@ -69,10 +69,10 @@ DefaultContentLanguageInSubdir = true
             name = "Sobre"
             url = "/pages/sobre/"
             weight = 2
-        [[languages.br.menu.main]]
-            name = "Tags"
-            url = "/tags/"
-            weight = 3
+        # [[languages.br.menu.main]]
+        #     name = "Tags"
+        #     url = "/tags/"
+        #     weight = 3
 
 [markup]
   [markup.highlight]
