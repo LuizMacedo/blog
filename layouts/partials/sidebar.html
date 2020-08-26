@@ -5,7 +5,7 @@
     <div>
       {{ .Site.Params.IntroDescription }}
     </div>
-    <a href = '{{ absLangURL "pages/about/" }}' class="button mt-1" role="button">Read More</a> <!-- Changed to absLangURL to have language mode. It was absURL -->
+    <a href = '{{ absLangURL "pages/about" }}' class="button mt-1" role="button">Read More</a> <!-- Changed to absLangURL to have language mode. It was absURL -->
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
     {{ range where .Site.RegularPages "Params.featured" true }}

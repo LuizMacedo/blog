@@ -3,7 +3,7 @@
 {{ $logo := $params.logo }}
 <header class='nav_header'>
   <nav class='nav'>
-    <a href='{{ absURL "" }}' class='nav_brand nav_item{{ if eq $centerLogo true }} nav_hide{{ end }}'>
+    <a href='{{ absLangURL "" }}' class='nav_brand nav_item{{ if eq $centerLogo true }} nav_hide{{ end }}'>
       {{- with $logo }}
       <img src="{{ absURL .  }}" class="logo" style="height: 40px;"> <!-- Menu icon size changed -->
       {{- else }}
@@ -18,7 +18,21 @@
         </svg>
       </div>
     </a>
-    <div class='nav_body nav_body_{{ .Site.Params.mobileNavigation }}'>
+    <div class='nav_body nav_body_{{ .Site.Params.mobileNavigation }}'> <!-- New translation configuration -->
+      {{- $currentPage := . -}}
+      {{ range .Site.Menus.main -}}
+      <div class='nav_parent{{ if $currentPage.IsMenuCurrent "main" . }} nav_active{{ end }}'>
+          <a href='{{ .URL | absLangURL }}' class='nav_item'>{{ .Name }}</a>
+      </div>
+      {{- end }}
+      {{- if eq $centerLogo true }}
+      <a href='{{ absURL "" }}' class='nav_brand nav_center nav_item'>
+        <img src="{{ absURL $logo }}" class="logo" style="height: 40px;">
+      </a>
+      {{- end }}
+      {{- partial "follow" . }}
+    </div>
+    <!-- <div class='nav_body nav_body_{{ .Site.Params.mobileNavigation }}'>
       {{- $link := .RelPermalink }}
       {{- range .Site.Data.menu }}
       <div class='nav_parent{{ if eq .link $link }} nav_active{{ end}}'>
@@ -39,6 +53,6 @@
       </a>
       {{- end }}
       {{- partial "follow" . }}
-    </div>
+    </div> -->
   </nav>
 </header>

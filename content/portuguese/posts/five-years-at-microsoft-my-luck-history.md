@@ -13,8 +13,8 @@ featured: true # Sets if post is a featured post, making appear on the home page
 # codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 # codeLineNumbers: false # Override global value for showing of line numbers within code block.
 # figurePositionShow: true # Override global value for showing the figure label.
-# translationKey: "five-years-at-microsoft-my-luck-history"
-slug: "5-anos-de-microsoft-minha-história-de-sorte"
+slug: "5-anos-de-microsoft-minha-historia-de-sorte"
+translationKey: "five-years-at-microsoft-my-luck-history"
 
 categories:
    - Tecnologia
