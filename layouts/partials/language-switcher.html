@@ -2,21 +2,19 @@
 {{ range .Translations }}
 {{ if eq .Site.Language.Lang "en" }}
 <a title="English" href="{{ .RelPermalink }}"><img src={{ absURL "/icons/united-states-of-america-flag-18.png" }}
-        class="English" style="width:18px; height: 18px;" alt="icon" /></a>
+        class="icon" style="width:18px; height: 18px;" alt="icon" /></a>
 {{ else }}
 <a title="Português" href="{{ .RelPermalink }}"><img src={{ absURL "/icons/brazil-flag-18.png" }} class="icon"
-        style="width:18px; height: 18px;" alt="Português" /></a>
+        style="width:18px; height: 18px;" alt="icon" /></a>
 {{ end }}
 {{ end }}
 {{ else }}
 {{ if eq .Site.Language.Lang "br" }}
 <a title="English" href="/en"><img src={{ absURL "/icons/united-states-of-america-flag-18.png" }} class="icon"
-        style="width:18px; height: 18px;" alt="English" />
-</a>
+        style="width:18px; height: 18px;" alt="icon" /></a>
 {{ else }}
 <a title="Português" href="/"><img src={{ absURL "/icons/brazil-flag-18.png" }} class="icon"
-        style="width:18px; height: 18px;" alt="Português" />
-</a>
+        style="width:18px; height: 18px;" alt="icon" /></a>
 {{ end }}
 {{ end }}
 </ul>
