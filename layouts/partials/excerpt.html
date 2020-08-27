@@ -17,7 +17,13 @@
         {{- end }}
         <div>
           <p class = 'pale'>{{ .Summary | truncate 320 }}</p>
+          {{ if eq .Site.Language.Lang "en" }} <!-- Add to translate sidebar -->
           <a href='{{ .Permalink }}' class='excerpt_more button'>Read More</a>
+          {{ else }} <!-- Add to translate sidebar -->
+          {{ if eq .Site.Language.Lang "br" }} <!-- Add to translate sidebar -->
+          <a href='{{ .Permalink }}' class='excerpt_more button'>Leia mais...</a>
+          {{ end }} <!-- Add to translate sidebar -->
+          {{ end }} <!-- Add to translate sideb -->
         </div>
       </div>
     </div>
