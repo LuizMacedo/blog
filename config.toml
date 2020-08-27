@@ -61,6 +61,7 @@ DefaultContentLanguageInSubdir = true
         info = "DevOps Engineer"
         #description = "John Doe's personal website" <- quick description
         keywords = "blog,developer,personal, devops"
+        introDescription = "Eu sou DevOps Support Escalation Engineer na Microsoft. Eu crio código, escrevo livros, palestro, empodero pessoas, promovo eventos, aprendo e ouço. Opinions are my own."
 
         [[languages.br.menu.main]]
             name = "Início"
