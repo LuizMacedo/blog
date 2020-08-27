@@ -1,14 +1,24 @@
-<div class = 'post_meta'>
+<div class='post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
+  {{ if .IsTranslated }}
+  {{ range .Translations }}
   <span class="post_date">
+    {{ if eq .Site.Language.Lang "br" }}
     {{ .Date.Format "Jan 2, 2006" -}}
+    {{ else }}
+    {{ if eq .Site.Language.Lang "en" }}
+    {{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
   </span>
   {{- with .Params.tags -}}
   {{- range . }}
   {{- $tag := . | urlize }}
-  <a href = '{{ absURL (printf "tags/%s" $tag) }}' class = 'post_tag button button_translucent'>
+  <a href='{{ absLangURL (printf "tags/%s" $tag) }}' class='post_tag button button_translucent'>
     {{- . }}
   </a>
   {{- end }}

@@ -27,8 +27,8 @@
       </div>
       {{- end }}
       {{- if eq $centerLogo true }}
-      <a href='{{ absURL "" }}' class='nav_brand nav_center nav_item'>
-        <img src="{{ absURL $logo }}" class="logo" style="height: 40px;">
+      <a href='{{ absLangURL "" }}' class='nav_brand nav_center nav_item'>
+        <img src="{{ absURL $logo }}" class="logo" style="height: 40px;"> <!-- Menu icon size changed -->
       </a>
       {{- end }}
       {{- partial "follow" . }}

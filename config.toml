@@ -15,6 +15,7 @@ DefaultContentLanguageInSubdir = true
 
 # [Taxonomies]
 #   tag = "tags"
+#   categories = "categories"
 
 # [blackfriday]
 #   angledQuotes = true
@@ -73,7 +74,10 @@ DefaultContentLanguageInSubdir = true
         #     name = "Tags"
         #     url = "/tags/"
         #     weight = 3
-
+    [languages.br.Taxonomies]
+        tag = "tags"
+        categories = "categorias"
+                
 [markup]
   [markup.highlight]
     codeFences = true

@@ -16,7 +16,7 @@ featured: true # Sets if post is a featured post, making appear on the home page
 slug: "5-anos-de-microsoft-minha-historia-de-sorte"
 translationKey: "five-years-at-microsoft-my-luck-history"
 
-categories:
+categorias:
    - Tecnologia
    - Carreira
 ---

@@ -10,6 +10,6 @@ translationKey = "about"
 
 Eu sou DevOps Support Escalation Engineer na [Microsoft](https://www.microsoft.com/).
 
-I crio código, escrevo livros, palestro, empodero pessoas, promovo eventos, aprendo e ouço.
+Eu crio código, escrevo livros, palestro, empodero pessoas, promovo eventos, aprendo e ouço.
 
 As postagens e opiniões aqui descritas não representam a empresa onde trabalho ou podem ser utilizadas como documentação oficial.

@@ -5,18 +5,44 @@
     <div>
       {{ .Site.Params.IntroDescription }}
     </div>
+ 
+
+    {{ if eq .Site.Language.Lang "en" }} <!-- Add to translate sidebar -->
     <a href = '{{ absLangURL "pages/about" }}' class="button mt-1" role="button">Read More</a> <!-- Changed to absLangURL to have language mode. It was absURL -->
+    {{ else }} <!-- Add to translate sidebar -->
+    {{ if eq .Site.Language.Lang "br" }} <!-- Add to translate sidebar -->
+    <a href = '{{ absLangURL "pages/sobre" }}' class="button mt-1" role="button">Saiba mais</a> <!-- Changed to absLangURL to have language mode. It was absURL -->
+
+    {{ end }} <!-- Add to translate sidebar -->
+    {{ end }} <!-- Add to translate sidebar -->
+
+    
+    {{ if eq .Site.Language.Lang "en" }} <!-- Add to translate sidebar -->
     <h2 class="mt-4">Featured Posts</h2>
+    {{ else }} <!-- Add to translate sidebar -->
+    {{ if eq .Site.Language.Lang "br" }} <!-- Add to translate sidebar -->
+    <h2 class="mt-4">Destaques</h2>
+    {{ end }} <!-- Add to translate sidebar -->
+    {{ end }} <!-- Add to translate sidebar -->
+    
     <ul>
     {{ range where .Site.RegularPages "Params.featured" true }}
      {{- if ne $title .Title }}
       <li>
         <a href="{{ .Permalink }}" class="nav-link">{{ .Title }}</a>
       </li>
+      
     {{- end }}
     {{ end }}
     </ul>
+    {{ if eq .Site.Language.Lang "en" }} <!-- Add to translate sidebar -->
     <h2 class="mt-4">Recent Posts</h2>
+    {{ else }} <!-- Add to translate sidebar -->
+    {{ if eq .Site.Language.Lang "br" }} <!-- Add to translate sidebar -->
+    <h2 class="mt-4">Posts recentes</h2>
+    {{ end }} <!-- Add to translate sidebar -->
+    {{ end }} <!-- Add to translate sideb -->
+
     <ul class="flex-column">
       {{ range first 8 (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.hidden" "!=" true) }}
       {{- if ne $title .Title }}
@@ -26,6 +52,8 @@
       {{- end }}
       {{- end }}
     </ul>
+
+
     {{- $numberOfTagsLimit := $.Site.Params.numberOfTagsShown }} <!-- See config -->
     {{ range $key, $value := .Site.Taxonomies }}
     <div>
