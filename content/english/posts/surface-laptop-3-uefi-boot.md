@@ -1,7 +1,7 @@
 ---
-title: "Surface Laptop 3 Uefi Boot"
+title: "Surface Laptop 3 UEFI Boot"
 date: 2021-01-22T11:53:33-06:00
-tags: ["Microsoft", "Surface", "Laptop3, Boot, Hardware, Issues"]
+tags: ["Microsoft", "Surface", "Laptop3", "Boot", "Hardware", "Issues"]
 draft: false
 description: "This post helps to start the UEFI boot in the Surface Laptop 3 since there is no documentation about it." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
