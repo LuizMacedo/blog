@@ -26,7 +26,7 @@ categories:
 
 Se você precisar habilitar as Service Tags do Azure DevOps Services para seu NSG ou Firewall, execute:
 
-```az network nsg rule create -g **MEURESOURCEGROUP** --nsg-name **MEUNSG** -n AzureDevOps --priority 400 --source-address-prefixes VirtualNetwork --destination-address-prefixes Storage --destination-port-ranges '*' --direction Inbound --access Allow --protocol Tcp --description "Habilitar Azure DevOps Services."```<br><br>
+az network nsg rule create -g **MEURESOURCEGROUP** --nsg-name **MEUNSG** -n AzureDevOps --priority 400 --source-address-prefixes VirtualNetwork --destination-address-prefixes Storage --destination-port-ranges '*' --direction Inbound --access Allow --protocol Tcp --description "Habilitar Azure DevOps Services."<br><br>
 
 > A Service Tag não se aplica aos Microsoft Hosted Agents. Os clientes vão continuar precisando habilitar todo o grupo geográfico para os Microsoft Hosted Agents. Se habilitar toda a geografia não é uma opção para você, nós recomendamos a utilização de Azure Virtual Machine Scale Set Agents. Os Scale Set Agents são uma forma de self-hosted agents que podem ser auto provisionados para atender a suas demandas.
 >
