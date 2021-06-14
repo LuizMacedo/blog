@@ -26,11 +26,11 @@ categories:
    - PowerShell
 ---
 
-A melhor forma para buscar a última versão do Agente no momento é obter a versão mais recente da API do GitHub e, em seguida, usar a tag de versão para criar a URL de download para a plataforma específica que você deseja.
+A melhor maneira de ter a última versão do Agente, até momento, é obter todas as versões utilizando a API do GitHub e, em seguida, usar a tag para criar a URL de download para a plataforma específica que você deseja.
 
-O objeto de liberação tem um arquivo assets.json associado a ele com os links de download para cada pacote se você quiser evitar a codificação permanente do esquema de URL.
+O objeto da release tem um arquivo assets.json associado a ele com os links de download para cada pacote se você quiser evitar hard-coding na URL.
 
-Aqui está um exemplo do PowerShell que pode ser facilmente adaptado para qualquer idioma:
+Aqui está um exemplo em PowerShell que pode ser facilmente adaptado para qualquer linguagem:
 
 ```$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
 $assets = Invoke-RestMethod $release.assets[0].browser_download_url
