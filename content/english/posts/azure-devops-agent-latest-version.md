@@ -1,6 +1,6 @@
 ---
 title: "Azure Devops Agent Latest Version" # Title of the blog post.
-date: 2021-06-14T01:00:00-06:00 # Date of post creation.
+date: 2021-06-14T04:45:00-06:00 # Date of post creation.
 tags: ["Microsoft", "Azure", "Azure DevOps", "Azure DevOps Services", "Agent", "GitHub", "Version", "Release", "vsts-agent-win-x64", "REST API", "PowerShell"]
 draft: false
 description: "This post helps you find the latest available version of Azure DevOps Services." # Description used for search engine.
@@ -25,11 +25,11 @@ categories:
    - PowerShell
 ---
 
-The best way to handle this at the moment is to get the latest release from the GitHub API and then use the version tag from that to create the download URL for the specific platform you want. 
+A melhor maneira de ter a última versão do Agente, até momento, é obter todas as versões utilizando a API do GitHub e, em seguida, usar a tag para criar a URL de download para a plataforma específica que você deseja.
 
-The release object has an assets.json file associated with it with the download links for each package if you want to avoid hard-coding the URL scheme.
+O objeto da release tem um arquivo assets.json associado a ele com os links de download para cada pacote se você quiser evitar hard-coding na URL.
 
-Here is a PowerShell example that could be easily adapted to any language:
+Aqui está um exemplo em PowerShell que pode ser facilmente adaptado para qualquer linguagem:
 
 ```$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
 $assets = Invoke-RestMethod $release.assets[0].browser_download_url

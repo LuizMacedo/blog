@@ -1,6 +1,6 @@
 ---
 title: "Azure Devops Agent Latest Version" # Title of the blog post.
-date: 2021-06-14T01:00:00-06:00 # Date of post creation.
+date: 2021-06-14T04:45:00-06:00 # Date of post creation.
 tags: ["Microsoft", "Azure", "Azure DevOps", "Azure DevOps Services", "Agent", "GitHub", "Version", "Release", "vsts-agent-win-x64", "REST API", "PowerShell"]
 draft: false
 description: "Esta postagem ajuda a encontrar a versão mais recente disponível do Azure DevOps Services." # Description used for search engine.
