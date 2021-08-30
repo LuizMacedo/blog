@@ -1,2 +1,2 @@
 # blog
-Luiz Macedo
+Luiz Macedo - Content Development
