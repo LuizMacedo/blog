@@ -4,7 +4,7 @@ baseURL = "https://luizmacedo.dev" # Include trailing slash
 languageCode = "en-us"
 # title = "Luiz Macedo"
 author = "Luiz Macedo"
-copyright = "Copyright © 2020 LUIZ MACEDO'S BLOG is licensed under CC BY 4.0"
+copyright = "Copyright © 2023 LUIZ MACEDO'S BLOG is licensed under CC BY 4.0"
 canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
@@ -33,8 +33,8 @@ DefaultContentLanguageInSubdir = true
         linkedin = "https://www.linkedin.com/in/luizfmacedo/"
         author = "Luiz Macedo "
         info = "DevOps Engineer"
-        #description = "John Doe's personal website" <- quick description
-        keywords = "blog,developer,personal, devops"
+        #description = "I like sharing what I know and what I’ve done with others. That’s why I started this blog." <- quick description
+        keywords = "blog,developer,personal,devops"
 
     [languages.en.menu]
         [[languages.en.menu.main]]
@@ -59,9 +59,9 @@ DefaultContentLanguageInSubdir = true
         linkedin = "https://www.linkedin.com/in/luizfmacedo/"
         author = "Luiz Macedo "
         info = "DevOps Engineer"
-        #description = "John Doe's personal website" <- quick description
-        keywords = "blog,developer,personal, devops"
-        introDescription = "Eu sou DevOps Support Escalation Engineer na Microsoft. Eu crio código, escrevo livros, palestro, empodero pessoas, promovo eventos, aprendo e ouço. Opinions are my own."
+        #description = "Gosto de compartilhar o que sei e o que fiz e trabalhei com os outros. É por isso que comecei este blog." <- quick description
+        keywords = "blog,developer,personal,devops"
+        introDescription = "Eu sou o Luiz Macedo - um pai orgulhoso, marido amoroso e profissional apaixonado por tecnologia e criatividade."
 
         [[languages.br.menu.main]]
             name = "Início"
@@ -124,7 +124,7 @@ logo = "/logos/Menu.png"
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
-# you can toggle this behaviour on or off on per page using the same variable inside your articles frontmatter
+# you can toggle this behavior on or off on per page using the same variable inside your articles frontmatter
 figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
 
 # Set the collapsed mobile navigation to either appear from the left or the right
