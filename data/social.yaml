@@ -5,7 +5,5 @@
 - item: "linkedin"
   url: "https://www.linkedin.com/in/luizfmacedo/"
 - item: "rss"
-  url: "https://www.youtube.com/channel/UC30jJ6o-3BCfTgYdwf-XixQ"
-- item: "youtube"
   url: "index.xml"
   internal:  true
