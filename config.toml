@@ -61,7 +61,7 @@ DefaultContentLanguageInSubdir = true
         info = "DevOps Engineer"
         #description = "Gosto de compartilhar o que sei e o que fiz e trabalhei com os outros. É por isso que comecei este blog." <- quick description
         keywords = "blog,developer,personal,devops"
-        introDescription = "Eu sou o Luiz Macedo - um pai orgulhoso, marido amoroso e profissional apaixonado por tecnologia e criatividade."
+        introDescription = "Eu sou o Luiz Macedo - um pai e marido orgulhoso, e profissional apaixonado por tecnologia e criatividade."
 
         [[languages.br.menu.main]]
             name = "Início"

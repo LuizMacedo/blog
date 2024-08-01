@@ -4,4 +4,4 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/LuizMacedo/luizmacedo.github.io.git
-	branch = master
+	branch = main

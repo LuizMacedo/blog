@@ -25,7 +25,7 @@ categories:
    - PowerShell
 ---
 
-The best way to handle this at the moment is to get the latest release from the GitHub API and then use the version tag from that to create the download URL for the specific platform you want. 
+The best way to handle this at the moment is to get the latest release from the GitHub API and then use the version tag from that to create the download URL for the specific platform you want.
 
 The release object has an assets.json file associated with it with the download links for each package if you want to avoid hard-coding the URL scheme.
 

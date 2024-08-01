@@ -1,6 +1,6 @@
 +++
 title = "Sobre"
-description = "Eu sou o Luiz Macedo - um pai orgulhoso, marido amoroso e profissional apaixonado por tecnologia e criatividade."
+description = "Eu sou o Luiz Macedo - um pai e marido orgulhoso, e profissional apaixonado por tecnologia e criatividade."
 date = "2023-07-31"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Luiz Macedo"
@@ -8,16 +8,14 @@ slug = "sobre"
 translationKey = "about"
 +++
 
-Olá a todos, eu sou o Luiz Macedo - um pai orgulhoso, marido amoroso e profissional apaixonado por tecnologia e criatividade.
+Olá a todos, eu sou o Luiz Macedo - um pai e marido orgulhoso, e profissional apaixonado por tecnologia e criatividade.
 
-Com que eu trabalho? Sou Desenvolvedor de Conteúdo (Content Developer) na Microsoft Corp no Texas e co-fundador de uma startup inovadora chamada [WillTrustYou.com](https://www.willtrustyou.com/). Meus dias de trabalho são preenchidos com a resolução de problemas, inovação e aprendizado - atividades das quais eu sou apaixonado e tenho me destacado.
+**Com que eu trabalho?** Sou Desenvolvedor de Conteúdo Senior (Senior Content Developer) na Microsoft Corp no Texas. Meus dias de trabalho são preenchidos com resolução de problemas, inovação e aprendizado - atividades das quais eu sou apaixonado e tenho me destacado.
 
 Comecei a trabalhar com tecnologia quando tinha apenas 15 anos, desenvolvendo em VB6 e Delphi e administrando o ambiente de infraestrutura do colégio em que cursei o ensino médio. Tive muitos trabalhos como desenvolvedor, gerente de configuração, arquiteto de soluções e software, e outros papéis relacionados a DevOps.
 
 Quando tinha 25 anos, entrei na Microsoft como Premier Field Engineer na Microsoft Brazil. Em 2018, mudei para o Texas como Engenheiro de Suporte DevOps (Support Escalation Engineer) na Microsoft Corp. Era a empresa e o país que eu sempre quis, e estou feliz em trabalhar com pessoas brilhantes. Ajudei nossos clientes a resolver problemas complexos com o Azure DevOps, GitHub e outros produtos da Microsoft.
-Hoje, estou ajudando a criar conteúdo educacional para o Microsoft Learn e sou responsável pelo conteúdo da AZ-400, DevOps VTD e outros tópicos relacionados a DevOps.
-
-Em 2023, co-fundei a empresa norte americana [WillTrustYou.com](https://www.willtrustyou.com/). Nossa empresa ajuda as pessoas a criarem seu legado digital na internet de forma segura e simples. É uma plataforma de gerenciamento de ativos digitais na nuvem apoiada pela Microsoft e tecnologias de blockchain.
+Hoje, estou ajudando a criar conteúdo educacional para o Microsoft Learn e sou responsável pelo conteúdo da AZ-400, AZ-2008 (DevOps Foundations) e outros tópicos relacionados a DevOps.
 
 Gosto de compartilhar o que sei e o que fiz e trabalhei com os outros. É por isso que comecei este blog. Aqui, escrevo sobre DevOps, SRE, Engenharia de Plataforma, Computação em Nuvem, Desenvolvimento, dicas para sua carreira e muito mais. Quero ajudar outros desenvolvedores e profissionais a aprenderem e crescerem em suas carreiras.
 
@@ -27,7 +25,7 @@ Quando não estou estudando, programando ou escrevendo, gosto de jogar videogame
 
 Se você quiser conversar, me envie um e-mail para <letstalk@luizmacedo.dev> ou Twitter [@OLuizMacedo](https://twitter.com/OLuizMacedo).
 
-As opiniões são minhas.
+As opiniões são minhas, e não representam a empresa que trabalho.
 
 Obrigado por ler sobre mim. Espero que você tenha gostado e tenha me conhecido melhor.
 

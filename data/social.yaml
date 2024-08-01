@@ -4,6 +4,8 @@
   url: "https://twitter.com/oluizmacedo"
 - item: "linkedin"
   url: "https://www.linkedin.com/in/luizfmacedo/"
+- item: "youtube"
+  url: "https://www.youtube.com/@devopspopz"
 - item: "rss"
   url: "index.xml"
   internal:  true

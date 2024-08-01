@@ -1,2 +1,2 @@
 # blog
-Luiz Macedo - Content Development
+Luiz Macedo - Senior Content Development
