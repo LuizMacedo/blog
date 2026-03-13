@@ -3,7 +3,7 @@ title: "5 anos de Microsoft, minha história de sorte!"
 date: 2019-09-04T10:00:20-05:00
 tags: ["Microsoft", "DevOps", "Carreira"]
 draft: false
-description: "This post says much about the people who always helped my in my career until and after join in Microsoft. This is a career path based post, but it's to say Thank you for everyone." # Description used for search engine.
+description: "Esta postagem é sobre as pessoas que sempre me ajudaram na minha carreira, antes e depois de entrar na Microsoft. É um retrospecto profissional, mas acima de tudo um agradecimento sincero a todos que fizeram parte da minha jornada." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
 # toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
@@ -17,8 +17,8 @@ slug: "5-anos-de-microsoft-minha-historia-de-sorte"
 translationKey: "five-years-at-microsoft-my-luck-history"
 
 categorias:
-   - Tecnologia
-   - Carreira
+  - Tecnologia
+  - Carreira
 ---
 
 ![Parabéns, Luiz no seu aniversário!](/images/five-year-anniversary.png)
@@ -37,7 +37,7 @@ Achei que terminaria nos 4 anos requeridos para Sistemas de Informação, mas a 
 
 Nessa mesma empresa, tive a sorte também de conhecer outras duas pessoas importantes que me ensinaram toda a base de programação que eu precisava, e inclusive ensinam até hoje. Muito obrigado @Tiago Soczek que trabalhou comigo aqui, e hoje trabalha no meu antigo time na Microsoft Brasil. Obrigado @Jefferson Soares, nunca teria entregue alguns softwares em VB.NET se não fosse por seus ensinamentos, com certeza contribuiu muito com minha carreira.
 
-Depois de alguns anos trabalhando na área, fui buscar novas oportunidades em uma empresa pequena, que novamente tive o @Rogerio Cordeiro me colocando em contato com o dono da empresa. Nessa empresa, pequena, mas com grande potencial, conheci minha terceira sorte, @Matheus Safraid, que me ensinou muitas coisas profissionalmente e para vida. Ficamos tão amigos, que sou seu padrinho de casamento, e pode apostar que quando eu me casar vai ser meu best men.
+Depois de alguns anos trabalhando na área, fui buscar novas oportunidades em uma empresa pequena, que novamente tive o @Rogerio Cordeiro me colocando em contato com o dono da empresa. Nessa empresa, pequena, mas com grande potencial, conheci minha terceira sorte, @Matheus Safraid, que me ensinou muitas coisas profissionalmente e para vida. Ficamos tão amigos, que sou seu padrinho de casamento, e pode apostar que quando eu me casar vai ser meu best man.
 Apesar de que meu foco desde o início era trabalhar na Microsoft, aqui aprendi a ser mais agnóstico a tecnologia. Muitas das coisas que trabalhávamos eram da Microsoft e quem me conhece sabe que sempre fui um fã, porém, trabalhei com várias outras coisas que me abriram a mente e me fizeram ser um profissional melhor. Você é uma das sortes que sou mais feliz de ter, um amigo para vida, te admiro demais. Obrigado.
 
 Voltei para a ESAT depois de algum tempo, com a cabeça totalmente diferente, com novas ideias e mais maduro. Assumi muitas novas responsabilidades e aprendi muito mais do que imaginei que poderia aprender na empresa que já trabalhei antes. Dessa vez, tive sorte de novo, a sorte aqui foi ter um antigo amigo @Guilherme Karatchuk como novo chefe e me dando a oportunidade de mostrar mais do que aprendi no tempo fora. Ele já trabalhava comigo e era um grande amigo desde a primeira vez na empresa. Foi de uma parceria gigante, trabalhamos em diversos projetos juntos e que com certeza contribuíram para meu crescimento. Obrigado.
@@ -73,7 +73,7 @@ Finalmente depois de algum tempo, recebi a notícia de que tinha passado e receb
 
 Esse foi o caminho até a Microsoft, depois disso, tenho toda uma vida dentro da empresa. Coisas que nunca viveria em uma empresa menor. Fui PFE (Premier Field Engineer) de TFS/DevOps por volta de 3 anos. Mudei de Curitiba para São Paulo, depois mudei para o Rio de Janeiro, mudei novamente para São Paulo. Trabalhei em muitos clientes, tantos que é difícil de contar, escrevi um livro, fiz muitas apresentações e conheci muita, mas muita gente da qual me orgulho e fico feliz por ter tanta sorte. Tenho muitas boas histórias e experiencias que gostaria que todos os meus amigos tivessem essas oportunidades de crescimento.
 
-Meu movimento mais recente foi o plano para mudar de país. Em resumo, para entenderem a dificuldade do processo, por mais que já estava trabalhando na empresa, apliquei para mais de 30 vagas diferentes em mais de 12 países. Meu objetivo sempre foi os EUA, desde criança, mas meu foco aqui era minha carreira continuar em movimento, experiencia de trabalho internacional diária, evoluir, por isso o país não era importante e sim a vaga. Depois de algum tempo, o @Rodrigo Gallazzi foi minha sorte que me permitiu estar aqui. Trabalhava com ele antes de sair do meu time atual e sempre o admirei pela capacidade técnica. Você sabe que não tenho como agradecer o que fez por mim, apesar da sua humildade gigante achando que não fez nada. Obrigado. Você sempre vai ter meu respeito.
+Meu movimento mais recente foi o plano para mudar de país. Em resumo, para entenderem a dificuldade do processo, por mais que já estava trabalhando na empresa, apliquei para mais de 30 vagas diferentes em mais de 12 países. Meu objetivo sempre foi os EUA, desde criança, mas meu foco aqui era minha carreira continuar em movimento, experiencia de trabalho internacional diária, evoluir, por isso o país não era importante e sim a vaga. Depois de algum tempo, o @Rodrigo Gallazzi foi a sorte que me permitiu estar aqui. Trabalhava com ele antes de sair do meu time atual e sempre o admirei pela capacidade técnica. Você sabe que não tenho como agradecer o que fez por mim, apesar da sua humildade gigante achando que não fez nada. Obrigado. Você sempre vai ter meu respeito.
 Ele me falou sobre minha vaga, me direcionou, me deu dicas extremamente importantes. Apliquei para a vaga, fiz as entrevistas técnicas com quem eu considerava referência na empresa, com 20 anos trabalhando para a Microsoft, com o gerente da vaga, e passei. Recebi minha oferta, com muita alegria, depois de muito trabalho, processos, despedidas, conseguimos.
 
 Hoje, estou vivendo um sonho ainda maior, o sonho dos sonhos, estou morando nos EUA, trabalhando como Support Escalation Engineer de DevOps (Azure DevOps Server e Services), atendendo a clientes de todo o mundo. Fiz meus 5 anos de Microsoft, e isso é apenas o começo. Aqui é minha casa, meu lugar, e meu sonho. Meu próximo passo na carreira já está planejado, mas ainda quero atingir alguns outros objetivos. Meus caminhos mudaram algumas vezes durante meu plano, mas nenhum foi ruim. Diversas vezes dei um passo para trás para dar dois, três, quatro para frente. E assim vou seguindo até descobrir qual é meu objetivo de vida. Mas uma coisa é certa, vocês ainda vão ouvir falar muito do meu nome, muito mesmo!

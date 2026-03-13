@@ -1,7 +1,20 @@
 ---
 title: "Azure DevOps Agent Latest Version" # Title of the blog post.
 date: 2021-06-14T04:45:00-06:00 # Date of post creation.
-tags: ["Microsoft", "Azure", "Azure DevOps", "Azure DevOps Services", "Agent", "GitHub", "Version", "Release", "vsts-agent-win-x64", "REST API", "PowerShell"]
+tags:
+  [
+    "Microsoft",
+    "Azure",
+    "Azure DevOps",
+    "Azure DevOps Services",
+    "Agent",
+    "GitHub",
+    "Version",
+    "Release",
+    "vsts-agent-win-x64",
+    "REST API",
+    "PowerShell",
+  ]
 draft: false
 description: "This post helps you find the latest available version of Azure DevOps Services." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -16,22 +29,23 @@ featured: true # Sets if post is a featured post, making appear on the home page
 translationKey: "azure-devops-agent-latest-version"
 
 categories:
-   - Technology
-   - Azure DevOps
-   - Azure
-   - Agent
-   - GitHub
-   - REST API
-   - PowerShell
+  - Technology
+  - Azure DevOps
+  - Azure
+  - Agent
+  - GitHub
+  - REST API
+  - PowerShell
 ---
 
-The best way to handle this at the moment is to get the latest release from the GitHub API and then use the version tag from that to create the download URL for the specific platform you want.
+The best way to handle this is to get the latest release from the GitHub API and use its version tag to build the download URL for your specific platform.
 
-The release object has an assets.json file associated with it with the download links for each package if you want to avoid hard-coding the URL scheme.
+The release object has an associated assets JSON file containing the download links for each package, which you can use to avoid hard-coding the URL scheme.
 
 Here is a PowerShell example that could be easily adapted to any language:
 
-```$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
+```powershell
+$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
 $assets = Invoke-RestMethod $release.assets[0].browser_download_url
 $assets | Where-Object { $_.name -match "vsts-agent-win-x64*" } | Select-Object -ExpandProperty downloadUrl
 ```

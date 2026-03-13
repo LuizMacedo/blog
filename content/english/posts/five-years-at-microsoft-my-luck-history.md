@@ -3,7 +3,7 @@ title: "5 years at Microsoft, my lucky story!"
 date: 2019-09-04T10:00:20-05:00
 tags: ["Microsoft", "DevOps", "Career"]
 draft: false
-description: "This post says much about the people who always helped my in my career until and after join in Microsoft. This is a career path based post, but it's to say Thank you for everyone." # Description used for search engine.
+description: "This post is about the people who always helped me throughout my career, before and after joining Microsoft. It is a career retrospective, but above all a heartfelt thank you to everyone who was part of my journey." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
 # toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
@@ -16,13 +16,11 @@ featured: true # Sets if post is a featured post, making appear on the home page
 translationKey: "five-years-at-microsoft-my-luck-history"
 
 categories:
-   - Technology
-   - Career
+  - Technology
+  - Career
 ---
 
 ![Congratulations, Luiz on your anniversary!](/images/five-year-anniversary.png)
-
-
 
 This week, on September 1, 2019, it’s been 5 years since I was lucky enough to start working at the biggest IT company in the world – the dream company I finally joined at 25 years old.
 
@@ -34,11 +32,11 @@ But this was a private school, and not everyone is as lucky as I was (privilege)
 
 I worked there for 2 years, and when I was 17, I asked to leave my internship to dedicate myself to my Senior year so I could focus on my studies to join a good college and ensure the future I wanted. I continued the technical high school course and Senior year in parallel, finishing both; luckily, this was a great victory!
 
-I joined Positivo University, where I had great teachers with huge technical knowledge who directed me correctly. On my first day in college, teachers asked what I wanted to do and what my plan was, and I promptly replied, “I want to work at Microsoft.”
+I joined Positivo University, where I had great teachers with deep technical knowledge who pointed me in the right direction. On my first day in college, teachers asked what I wanted to do and what my plan was, and I promptly replied, “I want to work at Microsoft.”
 
 I thought I would finish my Information Systems major in 4 years, but the story was much longer than that. In the first month of college, I got a software engineer internship as a C# and VB.NET developer (Framework 1.1 and 2.0) at ESAT, which was fortunate since I had to pay for college. Here I have two people to thank, @Rogerio Cordeiro, who has always been a mentor and inspiration, encouraging me to join Microsoft, and who put me in contact with @Diego Neufert, my second mentor and manager, who gave me the opportunity and taught me a lot for the next few years. I have a lot of respect for you, and I will never forget what you have taught me and still teach me today. You both were my second stroke of luck. Thank you.
 
-In that same company, I was also fortunate to meet two other important people who taught me the programming base I needed and still teach today. Thank you very much, @Tiago Soczek, who worked with me here and today works on my old team at Microsoft Brazil. Thanks, @Jefferson Soares; I would never have delivered some projects in VB.NET if it weren’t for your teachings. You certainly contributed a lot to my career.
+In that same company, I was also fortunate to meet two other important people who taught me the programming foundations I needed — lessons I still carry with me to this day. Thank you very much, @Tiago Soczek, who worked with me here and today works on my old team at Microsoft Brazil. Thanks, @Jefferson Soares; I would never have delivered some projects in VB.NET if it weren’t for your teachings. You certainly contributed a lot to my career.
 
 After some years working in the area, I went to look for new opportunities in a small company, where again @Rogerio Cordeiro put me in contact with the company’s owner. In this small but high-potential company, I met my third stroke of luck, @Matheus Safraid, who taught me many things professionally and personally. We became such good friends that I am his best man, and you can bet that you will be mine when I get married.
 
@@ -81,15 +79,15 @@ That was the way to Microsoft. After that, I have a whole life inside the compan
 My most recent move was the plan to change countries. In summary, to understand the difficulty of the process, even though I was already working at the company, I applied for more than 30 different vacancies in more than 12 countries. Since I was a child, my goal has always been the USA, but my focus here was on my career to keep moving, experience daily international work, and evolve. Hence, the country was not important but the position. After a while, @Rodrigo Gallazzi was my luck that allowed me to be here. Before leaving my current team, I worked with him, and I always admired him for his technical skills. You know I can’t thank you for what you did for me, despite your giant humility, thinking you didn’t do anything. Thank you. You will always have my respect.
 He told me about my position, directed me, and gave me essential tips. I applied for the position, did the technical interviews with whom I considered a reference in the company, with 20 years working for Microsoft, with the position manager, and passed. I received my offer with great joy. After a lot of work, processes, and goodbyes, we got it.
 
-Today, I am living an even bigger dream, the dream of dreams. I am living in the USA, working as a Support Escalation Engineer for DevOps (Azure DevOps Server and Services), serving customers worldwide. I made my 5 years at Microsoft, and that is just the beginning. Here is my home, my place, and my dream. My next career step is already planned, but I still want to achieve some other goals. My ways have changed a few times during my plan, but none have been bad. Several times I took a step back to take two, three, four steps forward. And so I keep going until I find out what my life goal is. But one thing is certain, you will still hear a lot about my name, very much!
+Today, I am living an even bigger dream — the dream of dreams. I am living in the USA, working as a Support Escalation Engineer for DevOps (Azure DevOps Server and Services), serving customers worldwide. I've reached 5 years at Microsoft, and that is just the beginning. This is my home, my place, and my dream. My next career step is already planned, but I still want to achieve some other goals. My path has changed a few times along the way, but none of those changes were for the worse. Many times I took one step back to take two, three, or four steps forward. And so I keep going until I discover what my true life goal is. But one thing is certain — you'll be hearing my name a lot more!
 
-And you know what’s most cool? Since the beginning of the story, I have had a partner who was there sometime before going to Ireland, who accompanied me throughout this journey and will continue to accompany me throughout my life, I hope. My girlfriend, wife, life partner, and best luck in the same place as my parents, @Gabi. Thanks! I love you!
+And you know what's coolest? Since even before I left for Ireland, I've had a partner who has accompanied me throughout this entire journey, and who I hope will continue to do so for the rest of my life. My girlfriend, wife, life partner, and greatest piece of luck — right up there alongside my parents — @Gabi. Thank you! I love you!
 
 When you look at someone and think that person is lucky, ask them, and you may be surprised at how lucky they are in life. Lucky to have people around who can help, lucky for opportunities, and lucky to have privileges that others, unfortunately, do not have, such as family support, education, food, etc. And above all, luck comes with effort and dedication. If you are lucky in life and do not know how to enjoy it, you will remain the same, in your comfort zone, and you will never have the luck you want. If you still think this is a lucky story and didn’t get my message, reread it!
 
 Friends who were not explicitly thanked can bet that I remember everyone who went through my journey and helped me. I would spend a whole day putting the names one by one here, but just as I told almost nothing of the complete story, I did not mention everyone important to my career and my life. Thanks to everyone who somehow contributed or went through my journey.
 
-I hope my story can motivate someone, as all my fortunes motivated me. Count on me if you need someone to help in any way.
+I hope my story can motivate someone, just as all my lucky breaks motivated me. Count on me if you ever need help in any way.
 
 Thank you for reading my story! I published this to share my journey, and I will probably publish things related to my career and topics that can help others. If you want to know more, feel free to get in touch!
 

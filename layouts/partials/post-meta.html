@@ -2,18 +2,12 @@
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
-  {{ if .IsTranslated }}
-  {{ range .Translations }}
   <span class="post_date">
-    {{ if eq .Site.Language.Lang "br" }}
-    {{ .Date.Format "Jan 2, 2006" -}}
-    {{ else }}
-    {{ if eq .Site.Language.Lang "en" }}
-    {{ .Date.Day }} de {{ index $.Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }}
-    {{ end }}
-    {{ end }}
-    {{ end }}
-    {{ end }}
+    {{- if eq .Site.Language.Lang "br" }}
+    {{ .Date.Day }} de {{ index .Site.Data.meses (printf "%d" .Date.Month) }} de {{ .Date.Year }}
+    {{- else }}
+    {{ .Date.Format "Jan 2, 2006" }}
+    {{- end }}
   </span>
   {{- with .Params.tags -}}
   {{- range . }}

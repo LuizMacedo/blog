@@ -21,7 +21,21 @@
 {{- with .Params.shareImage }}
   {{- $image = absURL .  }}
 {{- end }}
-<meta property = "og:locale" content = "en_US" />
+{{- $locale := "en_US" }}
+{{- if eq .Site.Language.Lang "br" }}
+  {{- $locale = "pt_BR" }}
+{{- end }}
+<meta property = "og:locale" content = "{{ $locale }}" />
+{{- if .IsTranslated }}
+{{- range .Translations }}
+{{- $altLocale := "en_US" }}
+{{- if eq .Lang "br" }}
+  {{- $altLocale = "pt_BR" }}
+{{- end }}
+<meta property = "og:locale:alternate" content = "{{ $altLocale }}" />
+<link rel="alternate" hreflang="{{ cond (eq .Lang "br") "pt-BR" "en" }}" href="{{ .Permalink }}" />
+{{- end }}
+{{- end }}
 {{- if .IsHome }}
 <meta property="og:type" content="website">
 {{- else }}
@@ -36,35 +50,34 @@
 <meta property = "og:description" content = "{{ $summary }}" />
 <meta property = "og:image" content = "{{ $image }}" />
 {{- if eq .Section $params.blogDir -}}
-  {{- $date := ( .Date.Format "2006-02-01") -}}
   {{- $date := (time .Date) }}
   {{- $lastMod := (time .Lastmod) }}
   <script type = "application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "mainEntityOfPage":"{{ $permalink }}",
-      "name": "{{ $site }}",
-      "headline": {{ $title }},
-      "description": {{ $summary }},
+      "mainEntityOfPage": "{{ $permalink }}",
+      "name": {{ $site | jsonify }},
+      "headline": {{ $title | jsonify }},
+      "description": {{ $summary | jsonify }},
       "url": "{{ $permalink }}",
-      "datePublished": {{ $date  }},
-      "dateModified": {{ $lastMod }},
+      "datePublished": "{{ $date.Format "2006-01-02T15:04:05Z07:00" }}",
+      "dateModified": "{{ $lastMod.Format "2006-01-02T15:04:05Z07:00" }}",
       "author": {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": {{ $author | jsonify }}
       },
-      "image":{
-        "@type":"ImageObject",
+      "image": {
+        "@type": "ImageObject",
         "url": "{{ $image }}"
       },
       "publisher": {
         "@type": "Organization",
         "logo": {
-          "@type":"ImageObject",
+          "@type": "ImageObject",
           "url": "{{ $logo }}"
         },
-        "name": "{{ $site }}"
+        "name": {{ $site | jsonify }}
       }
     }
   </script>

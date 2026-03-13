@@ -16,21 +16,21 @@ featured: true # Sets if post is a featured post, making appear on the home page
 translationKey: "surface-laptop-3-uefi-boot"
 
 categories:
-   - Technology
-   - Surface
+  - Technology
+  - Surface
 ---
 
-Quick tip for the Surface Laptop 3 owners.
+A quick tip for Surface Laptop 3 owners.
 
-During this week, after a Windows update, I had a problem with my Surface Laptop 3. It was unable to start Windows at all. I tried several times to enter the setup following the recommendations, but without success.
+This past week, after a Windows update, my Surface Laptop 3 stopped being able to start Windows entirely. I followed all the recommended steps to enter the UEFI setup, but none of them worked.
 
-I needed to change the boot to start the flash drive to recover the operating system, but I couldn't. After a lot of work to find the information and wasted time, I found out how to boot the Surface UEFI.
+I needed to change the boot order to start from a flash drive and recover the OS, but I couldn't figure out how. After a lot of searching and wasted time, I finally found the correct way to enter the Surface UEFI.
 
-Turn off the Laptop completely by pressing the power button for 5 seconds, or until it turns off. 
+Turn off the laptop completely by holding the power button for 5 seconds, or until it shuts off.
 
-**Press the Volume up (F4 ) + Power button for 45 seconds.**
+**Then press and hold Volume Up + Power for 45 seconds.**
 
-Done. It should open the Surface UEFI screen and can change the boot settings.
+Done. The Surface UEFI screen should appear, where you can change the boot settings.
 
 ![Surface UEFI](/images/surface-uefi.png)
 

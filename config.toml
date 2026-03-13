@@ -4,22 +4,21 @@ baseURL = "https://luizmacedo.dev" # Include trailing slash
 languageCode = "en-us"
 # title = "Luiz Macedo"
 author = "Luiz Macedo"
-copyright = "Copyright © 2023 LUIZ MACEDO'S BLOG is licensed under CC BY 4.0"
+copyright = "Copyright © 2023–2026 LUIZ MACEDO'S BLOG is licensed under CC BY 4.0"
 canonifyurls = true
 paginate = 10
 theme = "hugo-clarity"
 disqusShortname = "luizmacedo-dev" # Comments
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
-# disableLanguages = ["fr", "ja"]
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
 
-# [Taxonomies]
-#   tag = "tags"
-#   categories = "categories"
 
-# [blackfriday]
-#   angledQuotes = true
-#   hrefTargetBlank = true
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
 [languages]
   [languages.en]
@@ -80,6 +79,9 @@ DefaultContentLanguageInSubdir = true
         categories = "categorias"
                 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown (e.g. <br> tags in posts)
   [markup.highlight]
     codeFences = true
     guessSyntax = true
@@ -98,8 +100,10 @@ twitter = "@OLuizMacedo"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "I’m Luiz Macedo - a proud father, loving husband, and passionate tech and creative professional. Opinions are my own."
 
-# Google analytics Id
-ga_analytics = "UA-82328117-4"
+# Google Analytics ID — replace with your GA4 measurement ID (G-XXXXXXXXXX)
+# The old Universal Analytics (UA-) property was sunset in July 2023.
+# ga_analytics = "UA-82328117-4"
+ga_analytics = "G-NSHR8QDL3S"
 
 # limit the number of taxonomies links shown on the sidebar of each page by default.
 numberOfTagsShown = 14 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
@@ -129,3 +133,33 @@ figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
 
 # Set the collapsed mobile navigation to either appear from the left or the right
 mobileNavigation = "left" # if you prefer right change to 'right'
+
+# ---------------------------------------------------------------
+# Sitemap
+# ---------------------------------------------------------------
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# ---------------------------------------------------------------
+# Privacy — GDPR-friendly embed defaults
+# ---------------------------------------------------------------
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true

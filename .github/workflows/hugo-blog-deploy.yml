@@ -6,35 +6,59 @@ name: Hugo Blog to GitHub Pages Deploy
 # events but only for the main branch
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build-deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     steps:
-    - uses: actions/checkout@v3
-      with:
-        submodules: true # Fetch Hugo themes (true OR recursive)
-        fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - uses: actions/checkout@v4
+        with:
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
 
-    - name: Build
-      run: hugo --minify
+      - name: Build
+        run: hugo --minify
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.GH_ACTION_DEPLOY_PAT }}
-        external_repository: LuizMacedo/luizmacedo.github.io
-        publish_branch: main
-        publish_dir: ./public
-        cname: luizmacedo.dev
+      - name: Validate build output
+        run: |
+          # Both language homepages must exist
+          if [ ! -f "public/en/index.html" ]; then
+            echo "ERROR: EN homepage not generated (public/en/index.html missing)"
+            exit 1
+          fi
+          if [ ! -f "public/br/index.html" ]; then
+            echo "ERROR: BR homepage not generated (public/br/index.html missing)"
+            exit 1
+          fi
+
+          # Sanity-check minimum page count (bilingual site with 4 posts = 150+ pages)
+          COUNT=$(find public -name "index.html" -type f | wc -l | tr -d ' ')
+          if [ "$COUNT" -lt 50 ]; then
+            echo "ERROR: Only $COUNT pages generated — expected at least 50 for a bilingual build"
+            exit 1
+          fi
+          echo "Build OK: $COUNT pages generated, EN and BR homepages present"
+
+      - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_ACTION_DEPLOY_PAT }}
+          external_repository: LuizMacedo/luizmacedo.github.io
+          publish_branch: main
+          publish_dir: ./public
+          cname: luizmacedo.dev

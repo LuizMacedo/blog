@@ -17,17 +17,17 @@ slug: "surface-laptop-3-uefi-boot"
 translationKey: "surface-laptop-3-uefi-boot"
 
 categorias:
-   - Tecnologia
-   - Surface
+  - Tecnologia
+  - Surface
 ---
 
 Dica rápida para quem tem o Surface Laptop 3.
 
-Nessa semana após um update do Windows, tive um problema com meu Surface Laptop 3. Ele não conseguia iniciar o Windows de forma alguma. Tentei diversas vezes entrar no setup seguindo as recomendações, porém sem sucesso. 
+Nessa semana após um update do Windows, tive um problema com meu Surface Laptop 3. Ele não conseguia iniciar o Windows de forma alguma. Tentei diversas vezes entrar no setup seguindo as recomendações, porém sem sucesso.
 
-Eu precisava alterar a ordem do boot para conseguir iniciar o pen drive para recuperar o sistema operacional, mas não consegui. Após muito trabalho para encontrar a informação, e após um bom tempo perdido, descobri como inicializar o Surface UEFI.
+Eu precisava alterar a ordem do boot para conseguir iniciar pelo pen drive e recuperar o sistema operacional, mas não conseguia. Após muita pesquisa e tempo perdido, finalmente descobri como inicializar o Surface UEFI.
 
-Desligue o Laptop completamente apertando o botão de desligar por 5 segundos, ou até desligar. 
+Desligue o Laptop completamente apertando o botão de desligar por 5 segundos, ou até desligar.
 
 Após isso **você deve pressionar o botão de aumentar o Volume + botão de ligar/desligar por 45 segundos**.
 

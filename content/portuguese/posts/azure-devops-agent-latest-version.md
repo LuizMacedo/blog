@@ -1,7 +1,20 @@
 ---
 title: "Azure DevOps Agent Latest Version" # Title of the blog post.
 date: 2021-06-14T04:45:00-06:00 # Date of post creation.
-tags: ["Microsoft", "Azure", "Azure DevOps", "Azure DevOps Services", "Agent", "GitHub", "Version", "Release", "vsts-agent-win-x64", "REST API", "PowerShell"]
+tags:
+  [
+    "Microsoft",
+    "Azure",
+    "Azure DevOps",
+    "Azure DevOps Services",
+    "Agent",
+    "GitHub",
+    "Version",
+    "Release",
+    "vsts-agent-win-x64",
+    "REST API",
+    "PowerShell",
+  ]
 draft: false
 description: "Esta postagem ajuda a encontrar a versão mais recente disponível do Azure DevOps Services." # Description used for search engine.
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
@@ -17,22 +30,23 @@ slug: "azure-devops-agent-latest-version"
 translationKey: "azure-devops-agent-latest-version"
 
 categories:
-   - Technology
-   - Azure DevOps
-   - Azure
-   - Agent
-   - GitHub
-   - REST API
-   - PowerShell
+  - Technology
+  - Azure DevOps
+  - Azure
+  - Agent
+  - GitHub
+  - REST API
+  - PowerShell
 ---
 
-A melhor maneira de ter a última versão do Agente, até momento, é obter todas as versões utilizando a API do GitHub e, em seguida, usar a tag para criar a URL de download para a plataforma específica que você deseja.
+A melhor maneira de obter a última versão do Agente, até o momento, é usar a API do GitHub para buscar a release mais recente e, em seguida, usar a tag de versão para criar a URL de download da plataforma específica que você deseja.
 
 O objeto da release tem um arquivo assets.json associado a ele com os links de download para cada pacote se você quiser evitar hard-coding na URL.
 
 Aqui está um exemplo em PowerShell que pode ser facilmente adaptado para qualquer linguagem:
 
-```$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
+```powershell
+$release = Invoke-RestMethod https://api.github.com/repos/microsoft/azure-pipelines-agent/releases/latest
 $assets = Invoke-RestMethod $release.assets[0].browser_download_url
 $assets | Where-Object { $_.name -match "vsts-agent-win-x64*" } | Select-Object -ExpandProperty downloadUrl
 ```
