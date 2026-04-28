@@ -97,7 +97,7 @@ footnoteReturnLinkContents = "^"
 copyrightHolder = "Luiz Fernando de Macedo"
 author = "Luiz Macedo"
 twitter = "@OLuizMacedo"
-largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
+largeTwitterCard = true # Use summary_large_image for better social sharing previews
 introDescription = "I’m Luiz Macedo - a proud father, loving husband, and passionate tech and creative professional. Opinions are my own."
 
 # Google Analytics ID — replace with your GA4 measurement ID (G-XXXXXXXXXX)

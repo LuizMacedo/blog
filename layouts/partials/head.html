@@ -4,8 +4,15 @@
   {{- with .Site.Params.ga_verify }}
   <meta name="google-site-verification" content="{{ . }}" />
   {{- end }}
-  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
-  <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!-- Security headers (meta http-equiv) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://mirrors.creativecommons.org; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <!-- Font preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   {{- if (ne hugo.Environment "development") }}
   {{- partial "analytics.html" . }}
   {{- end }}
