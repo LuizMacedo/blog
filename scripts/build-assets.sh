@@ -61,7 +61,16 @@ sed -i.bak \
   -e "s|'{{ .Site.Params.figurePositionLabel }}'|'${FIGURE_LABEL}'|g" \
   "$STATIC_JS.tmp"
 rm -f "$STATIC_JS.tmp.bak"
-mv "$STATIC_JS.tmp" "$STATIC_JS"
+
+# Minify with terser if available
+if command -v npx &>/dev/null; then
+  echo "    Minifying JS with terser..."
+  npx --yes terser "$STATIC_JS.tmp" -o "$STATIC_JS" --compress --mangle
+  rm -f "$STATIC_JS.tmp"
+else
+  echo "    WARN: npx/terser not found, skipping minification"
+  mv "$STATIC_JS.tmp" "$STATIC_JS"
+fi
 
 echo "    Wrote $STATIC_JS ($(wc -c < "$STATIC_JS") bytes)"
 
