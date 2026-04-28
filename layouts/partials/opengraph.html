@@ -1,6 +1,6 @@
 {{- $summary := .Summary | truncate 160 }}
 {{- with .Params.description }}
-  {{- $summary = (. | truncate 160) }}
+{{- $summary = (. | truncate 160) }}
 {{- end }}
 {{- $site := .Site.Title }}
 {{- $title := .Title }}
@@ -9,31 +9,31 @@
 {{- $logo := absURL $params.logo }}
 {{- $author := $params.author }}
 {{- with .Params.author }}
-  {{ $author := . }}
+{{ $author := . }}
 {{- end }}
 {{- $image := absURL $params.fallBackOgImage }}
 {{- with .Params.featureImage }}
-  {{- $image = absURL .  }}
+{{- $image = absURL . }}
 {{- end }}
 {{- with .Params.thumbnail }}
-  {{- $image = absURL .  }}
+{{- $image = absURL . }}
 {{- end }}
 {{- with .Params.shareImage }}
-  {{- $image = absURL .  }}
+{{- $image = absURL . }}
 {{- end }}
 {{- $locale := "en_US" }}
 {{- if eq .Site.Language.Lang "br" }}
-  {{- $locale = "pt_BR" }}
+{{- $locale = "pt_BR" }}
 {{- end }}
-<meta property = "og:locale" content = "{{ $locale }}" />
+<meta property="og:locale" content="{{ $locale }}" />
 {{- if .IsTranslated }}
 {{- range .Translations }}
 {{- $altLocale := "en_US" }}
 {{- if eq .Lang "br" }}
-  {{- $altLocale = "pt_BR" }}
+{{- $altLocale = "pt_BR" }}
 {{- end }}
-<meta property = "og:locale:alternate" content = "{{ $altLocale }}" />
-<link rel="alternate" hreflang="{{ cond (eq .Lang "br") "pt-BR" "en" }}" href="{{ .Permalink }}" />
+<meta property="og:locale:alternate" content="{{ $altLocale }}" />
+<link rel="alternate" hreflang="{{ cond (eq .Lang " br") "pt-BR" "en" }}" href="{{ .Permalink }}" />
 {{- end }}
 {{- end }}
 {{- if .IsHome }}
@@ -42,13 +42,13 @@
 <meta property="og:type" content="article">
 {{- end }}
 <meta name="description" content="{{ $summary }}">
-<meta name = "twitter:card" content = "{{ if $params.largeTwitterCard }}summary_large_image{{ else }}summary{{ end }}" />
-<meta name = "twitter:creator" content = "{{ $params.twitter }}">
-<meta name = "twitter:title" content = "{{ .Title }}" />
-<meta property = "og:url" content = "{{ $permalink }}" />
-<meta property = "og:title" content = "{{ $title }}" />
-<meta property = "og:description" content = "{{ $summary }}" />
-<meta property = "og:image" content = "{{ $image }}" />
+<meta name="twitter:card" content="{{ if $params.largeTwitterCard }}summary_large_image{{ else }}summary{{ end }}" />
+<meta name="twitter:creator" content="{{ $params.twitter }}">
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta property="og:url" content="{{ $permalink }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $summary }}" />
+<meta property="og:image" content="{{ $image }}" />
 {{- if .IsHome }}
 <script type="application/ld+json">
 {
@@ -84,9 +84,9 @@
 {{- end }}
 {{- $blogDir := $params.blogDir | default "posts" -}}
 {{- if eq .Section $blogDir -}}
-  {{- $date := (time .Date) }}
-  {{- $lastMod := (time .Lastmod) }}
-  <script type="application/ld+json">
+{{- $date := (time .Date) }}
+{{- $lastMod := (time .Lastmod) }}
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",

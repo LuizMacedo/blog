@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Lang }}" data-figures="{{ .Params.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}>
+<html lang="{{ .Lang }}" data-figures="{{ .Params.figurePositionShow }}" {{ if .IsPage }} class="page" {{ end }}>
 
 <head>
   {{- partial "head" . }}
@@ -43,8 +43,14 @@
 {{ end }}
 
 <body data-code="{{ $maxCodeLines }}" data-lines="{{ $codeLineNumbers }}" id="documentTop">
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:1rem;background:var(--choice-bg);color:var(--text);" onfocus="this.style.cssText='position:fixed;left:1rem;top:1rem;width:auto;height:auto;overflow:visible;z-index:9999;padding:1rem;background:var(--choice-bg);color:var(--text);border-radius:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.2);'" onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to content</a>
-  <noscript><p>This site works best with JavaScript enabled.</p></noscript>
+  <a href="#main-content" class="skip-link"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:1rem;background:var(--choice-bg);color:var(--text);"
+    onfocus="this.style.cssText='position:fixed;left:1rem;top:1rem;width:auto;height:auto;overflow:visible;z-index:9999;padding:1rem;background:var(--choice-bg);color:var(--text);border-radius:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.2);'"
+    onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to
+    content</a>
+  <noscript>
+    <p>This site works best with JavaScript enabled.</p>
+  </noscript>
   {{- partial "nav" . }}
   <main id="main-content">
     {{- block "main" . }}{{ end }}
